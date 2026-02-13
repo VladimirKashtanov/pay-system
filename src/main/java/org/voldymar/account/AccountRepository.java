@@ -8,15 +8,18 @@ import java.util.*;
 public class AccountRepository {
 
     private final Map<Long, Account> accounts;
+    private Long idCount;
 
 
     public AccountRepository() {
         accounts = new HashMap<>();
+        idCount = 0L;
     }
 
 
     public Account save(Account account) {
-        accounts.put(account.id(), account);
+        accounts.put(idCount, account);
+        ++idCount;
         return account;
     }
 

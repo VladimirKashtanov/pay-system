@@ -8,15 +8,18 @@ import java.util.*;
 public class UserRepository {
 
     private final Map<Long, User> users;
+    private Long idCount;
 
 
     public UserRepository() {
         users = new HashMap<>();
+        idCount = 0L;
     }
 
 
     public User save(User user) {
-        users.put(user.id(), user);
+        users.put(idCount, user);
+        idCount++;
         return user;
     }
 
