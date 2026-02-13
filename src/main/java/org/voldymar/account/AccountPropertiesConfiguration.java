@@ -1,4 +1,4 @@
-package org.voldymar;
+package org.voldymar.account;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;

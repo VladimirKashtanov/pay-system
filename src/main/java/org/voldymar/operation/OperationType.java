@@ -1,4 +1,4 @@
-package org.voldymar;
+package org.voldymar.operation;
 
 public enum OperationType {
 

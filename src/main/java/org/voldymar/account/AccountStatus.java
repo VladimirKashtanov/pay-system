@@ -1,4 +1,4 @@
-package org.voldymar;
+package org.voldymar.account;
 
 public enum AccountStatus {
 
